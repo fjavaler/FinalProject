@@ -22,7 +22,6 @@ import javax.swing.JSeparator;
 public class ContactGui extends JFrame
 {
 
-	//test
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField txtFieldFirstName;
