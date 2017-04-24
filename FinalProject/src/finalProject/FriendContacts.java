@@ -1,6 +1,6 @@
 package finalProject;
 
-public class FriendContacts // extends Contact
+public class FriendContacts extends Contact
 {
 	// fields
 	private String notes;
