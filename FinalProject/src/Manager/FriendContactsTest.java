@@ -57,103 +57,35 @@ public class FriendContactsTest
 	@Test
 	public void testSetFirstName()
 	{
-		fail("Not yet implemented");
+		friend1.setFirstName("Bob1");
+		friend2.setFirstName("Bob2");
+		friend3.setFirstName("Bob3");
+		friend4.setFirstName("Bob4");
+		friend5.setFirstName("Bob5");
+		friend6.setFirstName("Bob6");
+		assertEquals("Bob1", friend1.getFirstName());
+		assertEquals("Bob2", friend2.getFirstName());
+		assertEquals("Bob3", friend3.getFirstName());
+		assertEquals("Bob4", friend4.getFirstName());
+		assertEquals("Bob5", friend5.getFirstName());
+		assertEquals("Bob6", friend6.getFirstName());
 	}
 
 	@Test
-	public void testGetLastName()
+	public void testNotes()
 	{
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetLastName()
-	{
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGetStreetAddress()
-	{
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetStreetAddress()
-	{
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGetcity()
-	{
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetcity()
-	{
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGetstate()
-	{
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetstate()
-	{
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGetzip()
-	{
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetzip()
-	{
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGetHomePhone()
-	{
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetHomePhone()
-	{
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGetMobilePhone()
-	{
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetMobilePhone()
-	{
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGetNotes()
-	{
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetNotes()
-	{
-		fail("Not yet implemented");
+		friend1.setNotes("Note1");
+		friend2.setNotes("Note2");
+		friend3.setNotes("Note3");
+		friend4.setNotes("Note4");
+		friend5.setNotes("Note5");
+		friend6.setNotes("Note6");
+		assertEquals("Note1", friend1.getNotes());
+		assertEquals("Note2", friend2.getNotes());
+		assertEquals("Note3", friend3.getNotes());
+		assertEquals("Note4", friend4.getNotes());
+		assertEquals("Note5", friend5.getNotes());
+		assertEquals("Note6", friend6.getNotes());
 	}
 
 	@Test
