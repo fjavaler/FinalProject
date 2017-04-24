@@ -1,4 +1,4 @@
-package finalProject;
+package Manager;
 
 public class FriendContacts extends Contacts
 {

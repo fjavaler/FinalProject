@@ -1,4 +1,4 @@
-package finalProject;
+package Manager;
 
 import java.awt.EventQueue;
 import javax.swing.JFrame;
