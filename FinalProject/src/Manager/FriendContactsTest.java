@@ -1,7 +1,6 @@
 package Manager;
 
 import static org.junit.Assert.*;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -19,23 +18,23 @@ public class FriendContactsTest
 	@Before
 	public void setUp() throws Exception
 	{
-		friend1 = new FriendContacts();
-		friend2 = new FriendContacts();
-		friend3 = new FriendContacts();
-		friend4 = new FriendContacts();
-		friend5 = new FriendContacts();
-		friend6 = new FriendContacts();		
+		friend1 = new FriendContacts(null, null, null, null, null, null, null, null);
+		friend2 = new FriendContacts(null, null, null, null, null, null, null, null);
+		friend3 = new FriendContacts(null, null, null, null, null, null, null, null);
+		friend4 = new FriendContacts(null, null, null, null, null, null, null, null);
+		friend5 = new FriendContacts(null, null, null, null, null, null, null, null);
+		friend6 = new FriendContacts(null, null, null, null, null, null, null, null);		
 	}
 
 	@After
 	public void tearDown() throws Exception
 	{
-		friend1 = new FriendContacts();
-		friend2 = new FriendContacts();
-		friend3 = new FriendContacts();
-		friend4 = new FriendContacts();
-		friend5 = new FriendContacts();
-		friend6 = new FriendContacts();
+		friend1 = new FriendContacts(null, null, null, null, null, null, null, null);
+		friend2 = new FriendContacts(null, null, null, null, null, null, null, null);
+		friend3 = new FriendContacts(null, null, null, null, null, null, null, null);
+		friend4 = new FriendContacts(null, null, null, null, null, null, null, null);
+		friend5 = new FriendContacts(null, null, null, null, null, null, null, null);
+		friend6 = new FriendContacts(null, null, null, null, null, null, null, null);
 	}
 
 	@Test
