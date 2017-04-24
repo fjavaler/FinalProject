@@ -18,23 +18,23 @@ public class FriendContactsTest
 	@Before
 	public void setUp() throws Exception
 	{
-		friend1 = new FriendContacts(null, null, null, null, null, null, null, null);
-		friend2 = new FriendContacts(null, null, null, null, null, null, null, null);
-		friend3 = new FriendContacts(null, null, null, null, null, null, null, null);
-		friend4 = new FriendContacts(null, null, null, null, null, null, null, null);
-		friend5 = new FriendContacts(null, null, null, null, null, null, null, null);
-		friend6 = new FriendContacts(null, null, null, null, null, null, null, null);		
+		friend1 = new FriendContacts("Joe", "Blow", "123 Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend2 = new FriendContacts("Jane", "Doe", "234 Blue Jay Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend3 = new FriendContacts("Bob", "Bixby", "345 Robin Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend4 = new FriendContacts("Bill", "Jefferson", "456 Finch Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend5 = new FriendContacts("Jack", "Johnson", "123 Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend6 = new FriendContacts("John", "Smith", "567 Cheetah Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");		
 	}
 
 	@After
 	public void tearDown() throws Exception
 	{
-		friend1 = new FriendContacts(null, null, null, null, null, null, null, null);
-		friend2 = new FriendContacts(null, null, null, null, null, null, null, null);
-		friend3 = new FriendContacts(null, null, null, null, null, null, null, null);
-		friend4 = new FriendContacts(null, null, null, null, null, null, null, null);
-		friend5 = new FriendContacts(null, null, null, null, null, null, null, null);
-		friend6 = new FriendContacts(null, null, null, null, null, null, null, null);
+		friend1 = new FriendContacts("Joe", "Blow", "123 Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend2 = new FriendContacts("Jane", "Doe", "234 Blue Jay Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend3 = new FriendContacts("Bob", "Bixby", "345 Robin Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend4 = new FriendContacts("Bill", "Jefferson", "456 Finch Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend5 = new FriendContacts("Jack", "Johnson", "123 Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend6 = new FriendContacts("John", "Smith", "567 Cheetah Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
 	}
 
 	@Test
@@ -46,7 +46,12 @@ public class FriendContactsTest
 	@Test
 	public void testGetFirstName()
 	{
-		fail("Not yet implemented");
+		assertEquals("Joe", friend1.getFirstName());
+		assertEquals("Jane", friend2.getFirstName());
+		assertEquals("Bob", friend3.getFirstName());
+		assertEquals("Bill", friend4.getFirstName());
+		assertEquals("Jack", friend5.getFirstName());
+		assertEquals("John", friend6.getFirstName());		
 	}
 
 	@Test
