@@ -203,46 +203,48 @@ public class FriendContacts extends Contact
 	}
 
 	/**
-	 * Validate friend info message text box.
+	 * Validate friend info message text box. On a result of less
+	 * than zero, an invalid entry has been made. On a result 
+	 * greater than zero all entries are valid.
 	 * 
 	 * @param info
-	 * @return whether valid or not.
+	 * @return int value indicating whether friend info is valid.
 	 */
-	public boolean validFriendInfo(String regex)
+	public int validFriendInfo()
 	{
 		if (!firstName.matches("[A-Z][a-zA-Z]*"))
 		{
-			return false;
+			return -1;
 		}
 		if (!lastName.matches("[a-zA-Z ]+([ '-][a-zA-Z]+)*"))
 		{
-			return false;
+			return -2;
 		}
 		if (!streetAddress.matches(".*"))
 		{
-			return false;
+			return -3;
 		}
 		if (!city.matches("[A-Z][a-zA-Z]*"))
 		{
-			return false;
+			return -4;
 		}
 		if (!state.matches("[A-Z][a-zA-Z]*"))
 		{
-			return false;
+			return -5;
 		}
 		if (!zip.matches("[0-9]{5}(-[0-9]{4})*"))
 		{
-			return false;
+			return -6;
 		}
 		if (!homePhone.matches("[ -(]*\\d{3}[ -).]*[ -.]*\\d{3}[ -.]*\\d{4}"))
 		{
-			return false;
+			return -7;
 		}
 		if (!mobilePhone.matches("[ -(]*\\d{3}[ -).]*[ -.]*\\d{3}[ -.]*\\d{4}"))
 		{
-			return false;
+			return -8;
 		}
-		return true;
+		return 1;
 	}
 
 	@Override
