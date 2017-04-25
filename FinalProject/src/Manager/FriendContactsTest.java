@@ -40,7 +40,8 @@ public class FriendContactsTest
 	@Test
 	public void testFriendContacts()
 	{
-		fail("Not yet implemented");
+		friend1 = new FriendContacts("Henry", "Hill", "1787 W 900 N", "Chicago", "IL", "60050", "(555)555-5555", "15555555555");
+		assertEquals("Chicago", friend1.getCity());
 	}
 
 	@Test
@@ -91,13 +92,31 @@ public class FriendContactsTest
 	@Test
 	public void testValidFriendInfo()
 	{
-		fail("Not yet implemented");
+		assertEquals(1, friend1.validInfo());
+		assertEquals(1, friend1.validFriendInfo());
+		friend1.setFirstName("");
+		assertEquals(-1, friend1.validInfo());
+		friend1.setFirstName("Joe");
+		friend1.setMobileNumber("180186705678");
+		assertEquals(-8, friend1.validInfo());
 	}
 
 	@Test
+	public void testFriendEquals()
+	{
+		FriendContacts friend7 = friend1 = new FriendContacts("Joe", "Blow", "123 Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		assertTrue(friend7.friendEquals(friend1));
+		assertTrue(friend1.friendEquals(friend2));
+		assertTrue(friend3.friendEquals(friend4));
+	}
+	
+	@Test
 	public void testEquals()
 	{
-		fail("Not yet implemented");
+		Contacts friend7 = friend1 = new FriendContacts("Joe", "Blow", "123 Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		assertTrue(friend7.equals(friend1));
+		assertFalse(friend1.equals(friend2));
+		assertFalse(friend3.equals(friend4));
 	}
 
 }

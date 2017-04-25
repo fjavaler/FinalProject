@@ -2,6 +2,7 @@ package Manager;
 
 public class FriendContacts extends Contacts
 {
+	
 	// fields
 	private String notes;
 	
@@ -61,8 +62,7 @@ public class FriendContacts extends Contacts
 		return result;
 	}
 
-	@Override
-	public boolean equals(Object obj)
+	public boolean friendEquals(Object obj)
 	{
 		if (this == obj)
 			return true;

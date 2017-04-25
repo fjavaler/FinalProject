@@ -3,25 +3,19 @@ package Manager;
 import java.io.Serializable;
 
 import javax.swing.JOptionPane;
+
 /**
- * FileName: FinalProject_Team3
- * Class: CSIS 1410
+ * FileName: FinalProject_Team3 Class: CSIS 1410
  * 
  * Fields:
  * 
- * 	-firstName: String
- * 	-lastName: String
- * 	-streetAddress: String
- * 	-city: String
- * 	-state: String
- * 	-zip: String
- * 	-homePhone: String
- * 	-mobilePhone: String
+ * -firstName: String -lastName: String -streetAddress: String -city: String
+ * -state: String -zip: String -homePhone: String -mobilePhone: String
  */
 
 public class Contacts implements Serializable
 {
-	private String firstName; 
+	private String firstName;
 	private String lastName;
 	private String streetAddress;
 	private String city;
@@ -29,8 +23,9 @@ public class Contacts implements Serializable
 	private String zip;
 	private String mobileNumber;
 	private String homeNumber;
-	
-	public Contacts(String fName, String lName, String strtAdrs,String cty, String st,String zip, String mNum, String hNum)
+
+	public Contacts(String fName, String lName, String strtAdrs, String cty, String st, String zip, String mNum,
+			String hNum)
 	{
 		this.firstName = new String(fName);
 		this.lastName = new String(lName);
@@ -41,20 +36,23 @@ public class Contacts implements Serializable
 		this.mobileNumber = new String(mNum);
 		this.homeNumber = new String(hNum);
 	}
-	
+
 	/**
 	 * @return the firstName
 	 */
-	public String getFirstName() 
+	public String getFirstName()
 	{
 		return firstName;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#hashCode()
 	 */
 	@Override
-	public int hashCode() {
+	public int hashCode()
+	{
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((city == null) ? 0 : city.hashCode());
@@ -68,11 +66,14 @@ public class Contacts implements Serializable
 		return result;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override
-	public boolean equals(Object obj) {
+	public boolean equals(Object obj)
+	{
 		if (this == obj)
 			return true;
 		if (obj == null)
@@ -80,53 +81,70 @@ public class Contacts implements Serializable
 		if (getClass() != obj.getClass())
 			return false;
 		Contacts other = (Contacts) obj;
-		if (city == null) {
+		if (city == null)
+		{
 			if (other.city != null)
 				return false;
-		} else if (!city.equals(other.city))
+		}
+		else if (!city.equals(other.city))
 			return false;
-		if (firstName == null) {
+		if (firstName == null)
+		{
 			if (other.firstName != null)
 				return false;
-		} else if (!firstName.equals(other.firstName))
+		}
+		else if (!firstName.equals(other.firstName))
 			return false;
-		if (homeNumber == null) {
+		if (homeNumber == null)
+		{
 			if (other.homeNumber != null)
 				return false;
-		} else if (!homeNumber.equals(other.homeNumber))
+		}
+		else if (!homeNumber.equals(other.homeNumber))
 			return false;
-		if (lastName == null) {
+		if (lastName == null)
+		{
 			if (other.lastName != null)
 				return false;
-		} else if (!lastName.equals(other.lastName))
+		}
+		else if (!lastName.equals(other.lastName))
 			return false;
-		if (mobileNumber == null) {
+		if (mobileNumber == null)
+		{
 			if (other.mobileNumber != null)
 				return false;
-		} else if (!mobileNumber.equals(other.mobileNumber))
+		}
+		else if (!mobileNumber.equals(other.mobileNumber))
 			return false;
-		if (state == null) {
+		if (state == null)
+		{
 			if (other.state != null)
 				return false;
-		} else if (!state.equals(other.state))
+		}
+		else if (!state.equals(other.state))
 			return false;
-		if (streetAddress == null) {
+		if (streetAddress == null)
+		{
 			if (other.streetAddress != null)
 				return false;
-		} else if (!streetAddress.equals(other.streetAddress))
+		}
+		else if (!streetAddress.equals(other.streetAddress))
 			return false;
-		if (zip == null) {
+		if (zip == null)
+		{
 			if (other.zip != null)
 				return false;
-		} else if (!zip.equals(other.zip))
+		}
+		else if (!zip.equals(other.zip))
 			return false;
 		return true;
 	}
 
 	/**
-	 * @param firstName the firstName to set
+	 * @param firstName
+	 *            the firstName to set
 	 */
-	public void setFirstName(String firstName) 
+	public void setFirstName(String firstName)
 	{
 		this.firstName = firstName;
 	}
@@ -134,79 +152,84 @@ public class Contacts implements Serializable
 	/**
 	 * @return the lastName
 	 */
-	public String getLastName() 
+	public String getLastName()
 	{
 		return lastName;
 	}
 
 	/**
-	 * @param lastName the lastName to set
+	 * @param lastName
+	 *            the lastName to set
 	 */
-	public void setLastName(String lastName) 
+	public void setLastName(String lastName)
 	{
 		this.lastName = lastName;
 	}
-	
+
 	/**
 	 * @return the street address
 	 */
-	public String getStreet() 
+	public String getStreet()
 	{
 		return streetAddress;
 	}
 
 	/**
 	 * @param strt
-	 * sets the street number/name
+	 *            sets the street number/name
 	 */
-	public void setCity(String cty) 
+	public void setCity(String cty)
 	{
 		this.city = cty;
 	}
+
 	/**
 	 * @return city
 	 */
-	public String getCity() 
+	public String getCity()
 	{
 		return city;
 	}
+
 	/**
 	 * @param zip
-	 * sets the postal zip
+	 *            sets the postal zip
 	 */
-	public void setZip(String zip) 
+	public void setZip(String zip)
 	{
 		this.zip = zip;
 	}
+
 	/**
 	 * @return zip
 	 */
-	public String getZip() 
+	public String getZip()
 	{
 		return zip;
 	}
 
 	/**
 	 * @param strt
-	 * sets the street number/name
+	 *            sets the street number/name
 	 */
-	public void setStreet(String strt) 
+	public void setStreet(String strt)
 	{
 		this.streetAddress = strt;
 	}
-	
+
 	/**
 	 * @return the cellNumber
 	 */
-	public String getMobileNumber() 
+	public String getMobileNumber()
 	{
 		return mobileNumber;
 	}
 
 	/**
-	 * @param cellNumber the cellNumber to set
+	 * @param cellNumber
+	 *            the cellNumber to set
 	 */
-	public void setMobileNumber(String cellNumber) 
+	public void setMobileNumber(String cellNumber)
 	{
 		this.mobileNumber = cellNumber;
 	}
@@ -214,86 +237,103 @@ public class Contacts implements Serializable
 	/**
 	 * @return the companyName
 	 */
-	public String getHomeNumber() 
+	public String getHomeNumber()
 	{
 		return homeNumber;
 	}
 
 	/**
-	 * @param companyName the companyName to set
+	 * @param companyName
+	 *            the companyName to set
 	 */
-	public void setHomeNumber(String hNum) 
+	public void setHomeNumber(String hNum)
 	{
 		this.homeNumber = hNum;
 	}
-	
+
 	/**
 	 * 
 	 * @return first and last name in single string.
 	 */
 	public String getFLName()
 	{
-		return getFirstName()+" "+getLastName();
+		return getFirstName() + " " + getLastName();
 	}
 
 	public int validInfo()
 	{
 		int result = 1;
-		if(!firstName.matches("[A-Z]([a-zA-Z ]+)*([ '-][a-zA-Z]+)*"))
+		if (!firstName.matches("[A-Z]([a-zA-Z ]+)*([ '-][a-zA-Z]+)*"))
 		{
 			result = -1;
 		}
-		if(!lastName.matches("[A-Z]([a-zA-Z ]+)*([ '-][a-zA-Z]+)*"))
+		if (!lastName.matches("[A-Z]([a-zA-Z ]+)*([ '-][a-zA-Z]+)*"))
 		{
 			result = -2;
 		}
-		if(!streetAddress.matches("[0-9]+ (S|N|W|E)[a-zA-Z]+ ([A-Z][a-zA-Z]+)?([0-9]+)? [A-Z][a-zA-Z]+( [A-Z][a-zA-Z]+)?"))//address
+		// if(!streetAddress.matches("[0-9]+ (S|N|W|E)[a-zA-Z]*
+		// ([A-Z][a-zA-Z]+)?([0-9]+)? [A-Z][a-zA-Z]+(
+		// [A-Z][a-zA-Z]+)?"))//address
+		if (!streetAddress.matches(".*"))
 		{
 			result = -3;
 		}
-		if(!city.matches("[A-Z][a-zA-Z]+( [A-Z][a-zA-Z]+)*( City)*"))
+		if (!city.matches("[A-Z][a-zA-Z]+( [A-Z][a-zA-Z]+)*( City)*"))
 		{
 			result = -4;
 		}
-		if(!state.matches("[A-Z]{2}"))
+		if (!state.matches("[A-Z]{2}"))
 		{
 			result = -5;
 		}
-		if(!zip.matches("\\d{5}"))
+		if (!zip.matches("\\d{5}"))
 		{
 			result = -6;
 		}
-		if(!homeNumber.matches("[0-9]{3}-[0-9]{3}-[0-9]{4}"))
+		if (!homeNumber.matches("[0-9]{3}-[0-9]{3}-[0-9]{4}"))
 		{
 			result = -7;
 		}
-		if(!mobileNumber.matches("[0-9]{3}-[0-9]{3}-[0-9]{4}"))
+		if (!mobileNumber.matches("[0-9]{3}-[0-9]{3}-[0-9]{4}"))
 		{
 			result = -8;
 		}
-		 switch (result) 
-		 {
-         case -1:  JOptionPane.showMessageDialog(null, "Error: Re-enter First Name","WARNING", JOptionPane.ERROR_MESSAGE);
-                  break;
-         case -2:  JOptionPane.showMessageDialog(null, "Error: Re-enter Last Name","WARNING", JOptionPane.ERROR_MESSAGE);
-                  break;
-         case -3:  JOptionPane.showMessageDialog(null, "Error: Re-enter Address","WARNING", JOptionPane.ERROR_MESSAGE);
-                  break;
-         case -4:  JOptionPane.showMessageDialog(null, "Error: Re-enter City","WARNING", JOptionPane.ERROR_MESSAGE);
-                  break;
-         case -5:  JOptionPane.showMessageDialog(null, "Error: Re-enter State","WARNING", JOptionPane.ERROR_MESSAGE);
-                  break;
-         case -6:  JOptionPane.showMessageDialog(null, "Error: Re-enter Zip","WARNING", JOptionPane.ERROR_MESSAGE);
-                  break;
-         case -7:  JOptionPane.showMessageDialog(null, "Error: Re-enter Home Number","WARNING", JOptionPane.ERROR_MESSAGE);
-                  break;
-         case -8:  JOptionPane.showMessageDialog(null, "Error: Re-enter Mobile Number","WARNING", JOptionPane.ERROR_MESSAGE);
-                  break;
-         default: result = -9;
-                  break;
-		 }
-		 return result;
-			
+		switch (result)
+		{
+			case 1:
+				break;
+			case -1:
+				JOptionPane.showMessageDialog(null, "Error: Re-enter First Name", "WARNING", JOptionPane.ERROR_MESSAGE);
+				break;
+			case -2:
+				JOptionPane.showMessageDialog(null, "Error: Re-enter Last Name", "WARNING", JOptionPane.ERROR_MESSAGE);
+				break;
+			case -3:
+				JOptionPane.showMessageDialog(null, "Error: Re-enter Address", "WARNING", JOptionPane.ERROR_MESSAGE);
+				break;
+			case -4:
+				JOptionPane.showMessageDialog(null, "Error: Re-enter City", "WARNING", JOptionPane.ERROR_MESSAGE);
+				break;
+			case -5:
+				JOptionPane.showMessageDialog(null, "Error: Re-enter State", "WARNING", JOptionPane.ERROR_MESSAGE);
+				break;
+			case -6:
+				JOptionPane.showMessageDialog(null, "Error: Re-enter Zip", "WARNING", JOptionPane.ERROR_MESSAGE);
+				break;
+			case -7:
+				JOptionPane.showMessageDialog(null, "Error: Re-enter Home Number", "WARNING",
+						JOptionPane.ERROR_MESSAGE);
+				break;
+			case -8:
+				JOptionPane.showMessageDialog(null, "Error: Re-enter Mobile Number", "WARNING",
+						JOptionPane.ERROR_MESSAGE);
+				break;
+			default:
+				result = -9;
+				break;
+		}
+		return result;
+
 	}
-	
+
 }
