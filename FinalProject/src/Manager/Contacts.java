@@ -335,5 +335,4 @@ public class Contacts implements Serializable
 		return result;
 
 	}
-
 }
