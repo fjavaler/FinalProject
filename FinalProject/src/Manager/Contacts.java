@@ -15,6 +15,7 @@ import javax.swing.JOptionPane;
 
 public class Contacts implements Serializable
 {
+
 	private String firstName;
 	private String lastName;
 	private String streetAddress;
@@ -335,4 +336,5 @@ public class Contacts implements Serializable
 		return result;
 
 	}
+
 }
