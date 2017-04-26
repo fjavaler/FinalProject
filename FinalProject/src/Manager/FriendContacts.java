@@ -66,7 +66,8 @@ public class FriendContacts extends Contacts
 		return result;
 	}
 
-	public boolean friendEquals(Object obj)
+	@Override
+	public boolean equals(Object obj)
 	{
 		if (this == obj)
 			return true;

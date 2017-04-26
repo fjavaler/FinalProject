@@ -163,9 +163,9 @@ public class BusinessContactsTest
 		assertEquals(1, friend1.validBusInfo());
 		friend1.setCompany("");
 		assertEquals(-10, friend1.validBusInfo());
-		friend1.seteMail("");
-		assertEquals(-12, friend1.validBusInfo());
-		friend1.setWorkPhone("");;
-		assertEquals(-11, friend1.validBusInfo());
+		friend2.seteMail("");
+		assertEquals(-12, friend2.validBusInfo());
+		friend3.setWorkPhone("");
+		assertEquals(-11, friend3.validBusInfo());
 	}
 }
