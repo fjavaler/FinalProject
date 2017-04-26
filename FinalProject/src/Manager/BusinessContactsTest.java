@@ -172,16 +172,7 @@ public class BusinessContactsTest
 	@Test
 	public void testBusEquals()
 	{
-		FriendContacts friend7 = friend1 = new FriendContacts("Joe", "Blow", "123 W Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
-		assertTrue(friend7.friendEquals(friend1));
-		assertTrue(friend1.friendEquals(friend2));
-		assertTrue(friend3.friendEquals(friend4));
-	}
-	
-	@Test
-	public void testEquals()
-	{
-		Contacts friend7 = friend1 = new FriendContacts("Joe", "Blow", "123 W Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		BusinessContacts friend7 = new BusinessContacts("Joe", "Blow", "123 West Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555", "ABC Company", "555-555-5555", "joe@abc.com");
 		assertTrue(friend7.equals(friend1));
 		assertFalse(friend1.equals(friend2));
 		assertFalse(friend3.equals(friend4));
