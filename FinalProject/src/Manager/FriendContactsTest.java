@@ -18,23 +18,23 @@ public class FriendContactsTest
 	@Before
 	public void setUp() throws Exception
 	{
-		friend1 = new FriendContacts("Joe", "Blow", "123 Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
-		friend2 = new FriendContacts("Jane", "Doe", "234 Blue Jay Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
-		friend3 = new FriendContacts("Bob", "Bixby", "345 Robin Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
-		friend4 = new FriendContacts("Bill", "Jefferson", "456 Finch Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
-		friend5 = new FriendContacts("Jack", "Johnson", "123 Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
-		friend6 = new FriendContacts("John", "Smith", "567 Cheetah Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");		
+		friend1 = new FriendContacts("Joe", "Blow", "123 West Bird Rd", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend2 = new FriendContacts("Jane", "Doe", "234 West Blue Jay Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend3 = new FriendContacts("Bob", "Bixby", "345 West Robin Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend4 = new FriendContacts("Bill", "Jefferson", "456 West Finch Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend5 = new FriendContacts("Jack", "Johnson", "123 West Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend6 = new FriendContacts("John", "Smith", "567 West Cheetah Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");		
 	}
 
 	@After
 	public void tearDown() throws Exception
 	{
-		friend1 = new FriendContacts("Joe", "Blow", "123 Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
-		friend2 = new FriendContacts("Jane", "Doe", "234 Blue Jay Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
-		friend3 = new FriendContacts("Bob", "Bixby", "345 Robin Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
-		friend4 = new FriendContacts("Bill", "Jefferson", "456 Finch Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
-		friend5 = new FriendContacts("Jack", "Johnson", "123 Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
-		friend6 = new FriendContacts("John", "Smith", "567 Cheetah Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend1 = new FriendContacts("Joe", "Blow", "123 W Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend2 = new FriendContacts("Jane", "Doe", "234 W Blue Jay Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend3 = new FriendContacts("Bob", "Bixby", "345 W Robin Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend4 = new FriendContacts("Bill", "Jefferson", "456 W Finch Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend5 = new FriendContacts("Jack", "Johnson", "123 W Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		friend6 = new FriendContacts("John", "Smith", "567 W Cheetah Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
 	}
 
 	@Test
@@ -104,7 +104,7 @@ public class FriendContactsTest
 	@Test
 	public void testFriendEquals()
 	{
-		FriendContacts friend7 = friend1 = new FriendContacts("Joe", "Blow", "123 Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		FriendContacts friend7 = friend1 = new FriendContacts("Joe", "Blow", "123 W Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
 		assertTrue(friend7.friendEquals(friend1));
 		assertTrue(friend1.friendEquals(friend2));
 		assertTrue(friend3.friendEquals(friend4));
@@ -113,7 +113,7 @@ public class FriendContactsTest
 	@Test
 	public void testEquals()
 	{
-		Contacts friend7 = friend1 = new FriendContacts("Joe", "Blow", "123 Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
+		Contacts friend7 = friend1 = new FriendContacts("Joe", "Blow", "123 W Bird Way", "Salt Lake City", "UT", "84116", "555-555-5555", "555-555-5555");
 		assertTrue(friend7.equals(friend1));
 		assertFalse(friend1.equals(friend2));
 		assertFalse(friend3.equals(friend4));

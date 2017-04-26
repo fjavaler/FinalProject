@@ -272,10 +272,7 @@ public class Contacts implements Serializable
 		{
 			result = -2;
 		}
-		// if(!streetAddress.matches("[0-9]+ (S|N|W|E)[a-zA-Z]*
-		// ([A-Z][a-zA-Z]+)?([0-9]+)? [A-Z][a-zA-Z]+(
-		// [A-Z][a-zA-Z]+)?"))//address
-		if (!streetAddress.matches(".*"))
+		if(!streetAddress.matches("[0-9]+ (S|N|W|E)[a-zA-Z]+ ([A-Z][a-zA-Z]+)?([0-9]+)? [A-Z][a-zA-Z]+( [A-Z][a-zA-Z]+)?"))
 		{
 			result = -3;
 		}

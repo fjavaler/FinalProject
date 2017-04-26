@@ -2,14 +2,15 @@ package Manager;
 
 public class FriendContacts extends Contacts
 {
-	
+
 	// fields
 	private String notes;
-	
+
 	/**
 	 * Constructor
 	 */
-	public FriendContacts(String firstName, String lastName, String streetAddress, String city, String state, String zip, String mobileNumber, String homeNumber)
+	public FriendContacts(String firstName, String lastName, String streetAddress, String city, String state,
+			String zip, String mobileNumber, String homeNumber)
 	{
 		super(firstName, lastName, streetAddress, city, state, zip, mobileNumber, homeNumber);
 		this.notes = "";
@@ -37,18 +38,21 @@ public class FriendContacts extends Contacts
 	}
 
 	/**
-	 * Validate friend info message text box. On a result of less
-	 * than zero, an invalid entry has been made. On a result 
-	 * greater than zero all entries are valid.
+	 * Validate friend info message text box. On a result of less than zero, an
+	 * invalid entry has been made. On a result greater than zero all entries
+	 * are valid.
 	 * 
 	 * @param info
 	 * @return int value indicating whether friend info is valid.
 	 */
 	public int validFriendInfo()
 	{
-		if (!notes.matches(".*"))
+		if (this.validInfo() > 0)
 		{
-			return -1;
+			if (!notes.matches(".*"))
+			{
+				return -1;
+			}
 		}
 		return 1;
 	}

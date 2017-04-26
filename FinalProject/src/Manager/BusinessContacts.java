@@ -139,10 +139,10 @@ public class BusinessContacts extends Contacts
 	 * @param field
 	 * validates the field entry
 	 */
-	public int validBusInfo(BusinessContacts contact)
+	public int validBusInfo()
 	{
 		int result = 1;
-		if(contact.validInfo()>0)
+		if(this.validInfo()>0)
 		{
 		if(!company.matches("[A-Z]([a-zA-Z0-9 ]+)*([ '-][a-zA-Z]+)*(Inc)*(LLC)*(Corp)*(\\.)*"))
 		{
@@ -163,7 +163,7 @@ public class BusinessContacts extends Contacts
 		case -11: JOptionPane.showMessageDialog(null, "Error: Re-enter Work Phone","WARNING", JOptionPane.ERROR_MESSAGE);
 			break;
 		case -12: JOptionPane.showMessageDialog(null, "Error: Re-enter First Name","WARNING", JOptionPane.ERROR_MESSAGE);
-		default: result = -13;
+		default:
 			break;
 		}
 		
