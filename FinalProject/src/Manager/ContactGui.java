@@ -18,10 +18,12 @@ import javax.swing.JComboBox;
 import javax.swing.JTabbedPane;
 import javax.swing.JLayeredPane;
 import javax.swing.JSeparator;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class ContactGui extends JFrame
 {
-	
+
 	//fields
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -91,6 +93,11 @@ public class ContactGui extends JFrame
 		mnFile.add(separator_1);
 
 		JMenuItem mntmExit = new JMenuItem("Exit");
+		mntmExit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			    System.exit(0);
+			}
+		});
 		mnFile.add(mntmExit);
 
 		JMenu mnSettings = new JMenu("Settings");
